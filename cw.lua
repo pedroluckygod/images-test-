@@ -1,6 +1,11 @@
 -- taken from "ZeN Samurai" by Trb......
 
 
+local StarterGui = game:GetService("StarterGui")
+
+StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, false)
+
+
 spawn(function()
   for i = 1, 30 do
   game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("sh~ it","All")
